@@ -1,0 +1,8 @@
+version: "3"
+services:
+  koel_container:
+    image: oldiy/chrome-novnc:latest
+    container_name: chrome
+    ports:
+      - 7003:8083
+    restart: unless-stopped
